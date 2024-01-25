@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Graph Visualizer</title>
+    <style>
+        /* Add your custom styles here */
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        svg {
+            display: block;
+        }
+
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 5px;
+            font-size: 12px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <svg id="buildGraph"></svg>
+
+    <div class="tooltip" id="tooltip" style="display: none;"></div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="buildGraph.js"></script>
+</body>
+</html>
